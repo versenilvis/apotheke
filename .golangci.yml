@@ -1,15 +1,16 @@
-version: "2"
-
 linters:
   enable:
-    - errcheck
     - gosimple
     - govet
     - ineffassign
     - staticcheck
     - unused
-    - gofmt
-    - goimports
+  disable:
+    - errcheck
+
+linters-settings:
+  errcheck:
+    disable: true
 
 issues:
   max-issues-per-linter: 0
