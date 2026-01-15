@@ -25,6 +25,11 @@
 
 </div>
 
+[Tiếng Việt](./README.VN.md) | English
+
+> [!WARNING]
+> **Currently, Apotheke is under development.**
+
 ## Preview
 
 <img width="2531" height="742" alt="image" src="https://github.com/user-attachments/assets/cba2cc36-aa43-468d-994e-fc86cfb77c4f" />
@@ -51,10 +56,7 @@ cd apotheke
 make install
 ```
 
-> [!WARNING]
-> **Currently, Apotheke is in development.**
-
-## Shell Setup
+## Shell setup
 
 Add to your shell config to enable the `a` shortcut:
 
@@ -286,7 +288,7 @@ Commands are dangerous (unlike `cd`). Safety features:
 | `--dry-run`        | Preview command without executing                         |
 | Interactive picker | Multiple matches require explicit selection               |
 
-## Database
+## Data
 
 | Item     | Location                                 |
 | -------- | ---------------------------------------- |
@@ -294,15 +296,12 @@ Commands are dangerous (unlike `cd`). Safety features:
 | Override | Set `XDG_DATA_HOME` environment variable |
 
 <details>
-  <summary><h1>FAQ</h1></summary>
+  <summary><h2>FAQ</h2></summary>
   
-**Q: Why did you build this?**  
+### Q: Why did you build this?  
 A: To store 'codex resume' and 'cursor-agent --resume=' commands that I always forget after turn off the terminal.
 
-**Q: What does "Apotheke" mean?**  
-A: Well I asked ChatGPT what is "storage" in Acient Greek and it said 'Apotheke'.
-
-**Q: How is Apotheke different from shell aliases?**  
+### Q: How is Apotheke different from shell aliases?  
 A: Shell aliases are static and require editing config files. Apotheke offers:
 - Fuzzy matching (a kd → kubectl delete pod)
 - Frecency ranking (frequently used commands rank higher)
@@ -310,14 +309,17 @@ A: Shell aliases are static and require editing config files. Apotheke offers:
 - Safety confirmations for dangerous commands
 - Argument appending (a kdp my-pod → kubectl delete pod my-pod)
 
-**Q: How is it different from shell history?**  
+### Q: How is it different from shell history?  
 A: History searches all commands. Apotheke only stores commands you explicitly bookmark with meaningful names.
 
-**Q: Does it work on Windows?**  
+### Q: Does it work on Windows?  
 A: Yes, but shell integration requires Git Bash, WSL, or PowerShell with custom setup.
 
-**Q: Can I sync across machines?**  
+### Q: Can I sync across machines?  
 A: Not built-in yet. Maybe in the future. Or you can manually copy the database file.
+
+### Q: What does "Apotheke" mean?  
+A: Well, I just asked ChatGPT what is "storage" in Acient Greek and it said 'Apotheke'.
 </details>
 
 ## License
