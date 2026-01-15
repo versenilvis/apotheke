@@ -295,6 +295,15 @@ Commands are dangerous (unlike `cd`). Safety features:
 | Database | `~/.local/share/apotheke/apotheke.db`    |
 | Override | Set `XDG_DATA_HOME` environment variable |
 
+## Uninstall
+
+```bash
+rm ~/.local/bin/apotheke
+rm -rf ~/.local/share/apotheke
+```
+
+Remove the `eval` line from your shell config file.
+
 <details>
   <summary><h2>FAQ</h2></summary>
   

@@ -289,6 +289,16 @@ Lệnh có thể nguy hiểm. Các tính năng an toàn:
 | Database | `~/.local/share/apotheke/apotheke.db`    |
 | Ghi đè   | Đặt biến môi trường `XDG_DATA_HOME`      |
 
+
+## Gỡ cài đặt
+
+```bash
+rm ~/.local/bin/apotheke
+rm -rf ~/.local/share/apotheke
+```
+
+Xóa dòng `eval` trong file config shell của bạn.
+
 <details>
   <summary><h2>FAQ</h2></summary>
   
