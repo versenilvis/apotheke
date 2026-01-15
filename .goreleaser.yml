@@ -15,21 +15,6 @@ builds:
       - darwin
     goarch:
       - amd64
-      - arm64
-    ldflags:
-      - -s -w
-      - -X main.version={{.Version}}
-
-  - id: apotheke-windows
-    main: ./cmd/apotheke
-    binary: apotheke
-    env:
-      - CGO_ENABLED=1
-      - CC=x86_64-w64-mingw32-gcc
-    goos:
-      - windows
-    goarch:
-      - amd64
     ldflags:
       - -s -w
       - -X main.version={{.Version}}
@@ -38,12 +23,8 @@ archives:
   - id: default
     format: tar.gz
     name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
-    format_overrides:
-      - goos: windows
-        format: zip
     files:
       - README.md
-      - LICENSE
 
 checksum:
   name_template: "checksums.txt"
@@ -58,7 +39,7 @@ changelog:
 
 release:
   github:
-    owner: verse
+    owner: versenilvis
     name: apotheke
   draft: false
   prerelease: auto
