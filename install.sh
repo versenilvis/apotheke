@@ -2,7 +2,7 @@
 set -e
 
 # Apotheke installer
-# Usage: curl -sS https://raw.githubusercontent.com/verse/apotheke/main/install.sh | sh
+# Usage: curl -sS https://raw.githubusercontent.com/versenilvis/apotheke/main/install.sh | sh
 
 REPO="versenilvis/apotheke"
 BIN_DIR="${BIN_DIR:-$HOME/.local/bin}"
