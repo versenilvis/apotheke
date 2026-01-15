@@ -59,8 +59,7 @@ func TestInitBash_Content(t *testing.T) {
 
 	required := []string{
 		"add|rm|remove|list|ls|edit|show|init|help",
-		"apotheke resolve",
-		"eval",
+		"command apotheke",
 	}
 
 	for _, r := range required {
@@ -75,8 +74,7 @@ func TestInitZsh_Content(t *testing.T) {
 
 	required := []string{
 		"add|rm|remove|list|ls|edit|show|init|help",
-		"apotheke resolve",
-		"eval",
+		"command apotheke",
 	}
 
 	for _, r := range required {
@@ -91,8 +89,7 @@ func TestInitFish_Content(t *testing.T) {
 
 	required := []string{
 		"case add rm remove list ls edit show init help",
-		"apotheke resolve",
-		"eval",
+		"command apotheke",
 	}
 
 	for _, r := range required {
