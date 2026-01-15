@@ -15,13 +15,7 @@ function a() {
             command apotheke "$@"
             ;;
         *)
-            local __apotheke_result
-            __apotheke_result="$(command apotheke resolve "$@")"
-            local __apotheke_exit=$?
-            
-            if [[ $__apotheke_exit -eq 0 && -n "$__apotheke_result" ]]; then
-                eval "$__apotheke_result"
-            fi
+            command apotheke "$@"
             ;;
     esac
 }
@@ -41,13 +35,7 @@ function a() {
             command apotheke "$@"
             ;;
         *)
-            local __apotheke_result
-            __apotheke_result="$(command apotheke resolve "$@")"
-            local __apotheke_exit=$?
-            
-            if [[ $__apotheke_exit -eq 0 && -n "$__apotheke_result" ]]; then
-                eval "$__apotheke_result"
-            fi
+            command apotheke "$@"
             ;;
     esac
 }
@@ -66,12 +54,7 @@ function a
         case add rm remove list ls edit show init help --help -h version --version -v
             command apotheke $argv
         case '*'
-            set -l __apotheke_result (command apotheke resolve $argv)
-            set -l __apotheke_exit $status
-            
-            if test $__apotheke_exit -eq 0 -a -n "$__apotheke_result"
-                eval $__apotheke_result
-            end
+            command apotheke $argv
     end
 end
 `
