@@ -7,19 +7,19 @@ Apotheke (/a.poˈteː.kə/) is a command bookmark tool like zoxide but for comma
 **One-liner (recommended):**
 
 ```bash
-curl -sS https://raw.githubusercontent.com/verse/apotheke/main/install.sh | sh
+curl -sS https://raw.githubusercontent.com/versenilvis/apotheke/main/install.sh | sh
 ```
 
 **Or with Go:**
 
 ```bash
-go install github.com/verse/apotheke/cmd/apotheke@latest
+go install github.com/versenilvis/apotheke/cmd/apotheke@latest
 ```
 
 **Or build from source:**
 
 ```bash
-git clone https://github.com/verse/apotheke
+git clone https://github.com/versenilvis/apotheke
 cd apotheke
 make install
 ```
