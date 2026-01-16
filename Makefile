@@ -1,13 +1,14 @@
 .PHONY: build install clean test
 
 build:
-	@go build -o apotheke ./cmd/apotheke
+	@mkdir -p bin
+	@go build -o bin/apotheke ./cmd
 
 install: build
-	@sudo cp apotheke /usr/local/bin/
+	@cp bin/apotheke ~/.local/bin/
 
 clean:
-	@rm -f apotheke
+	@rm -rf bin
 
 test:
 	@go test ./...
