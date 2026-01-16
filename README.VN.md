@@ -73,8 +73,16 @@ echo 'apotheke init fish | source' >> ~/.config/fish/config.fish
 ```
 
 ## Các lệnh
+> [!IMPORTANT]
+> - Vui lòng đọc từ [docs](./docs/commands.md)
 
-- Vui lòng đọc từ [docs](./docs/commands.md)
+## Hướng dẫn
+> [!IMPORTANT]
+> - Vui lòng đọc từ [docs](./docs/commands.md)
+
+## Ví dụ khác
+> [!IMPORTANT]
+> - Vui lòng đọc từ [docs](./docs/commands.md)
 
 ## Gỡ cài đặt
 
