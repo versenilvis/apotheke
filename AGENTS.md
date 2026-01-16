@@ -10,7 +10,7 @@ Apotheke is a command bookmark tool written in Go. It allows users to save frequ
 
 ```
 apotheke/
-├── cmd/apotheke/main.go      # CLI entry point, cobra commands
+├── cmd/root.go               # CLI entry point, cobra commands
 ├── internal/
 │   ├── config/config.go      # XDG config paths
 │   ├── db/store.go           # SQLite CRUD operations
@@ -18,9 +18,10 @@ apotheke/
 │   ├── model/command.go      # Command struct and helpers
 │   └── resolver/matcher.go   # Fuzzy matching with frecency
 ├── pkg/shell/init.go         # Shell init scripts (bash/zsh/fish)
-├── docs/                     # Documentation
-│   ├── architecture.md       # System design
-│   ├── contributing.md       # Development guide
+├── docs/
+│   ├── commands.md           # Command reference
+│   ├── concepts.md           # Matching, safety, data
+│   ├── examples.md           # Real-world examples
 │   ├── tutorial.md           # User tutorial
 │   └── testing.md            # Test documentation
 ├── go.mod
@@ -67,7 +68,7 @@ Generates shell init scripts that create the `a` function alias.
 ## Building
 
 ```bash
-go build -o apotheke ./cmd/apotheke
+go build -o apotheke ./cmd
 go test ./...
 ```
 
@@ -82,7 +83,7 @@ go test ./...
 
 ### Adding a new CLI flag
 
-1. Add flag variable in `cmd/apotheke/main.go`
+1. Add flag variable in `cmd/root.go`
 2. Register in `init()` function
 3. Use in run function
 4. Update README.md
@@ -122,7 +123,8 @@ go test ./... -v
 
 ## Documentation
 
-- [Architecture](docs/architecture.md) - System design
-- [Contributing](docs/contributing.md) - Development guide  
+- [Commands](docs/commands.md) - Command reference
+- [Concepts](docs/concepts.md) - Matching, safety, data
+- [Examples](docs/examples.md) - Real-world examples
 - [Tutorial](docs/tutorial.md) - User tutorial
 - [Testing](docs/testing.md) - Test documentation
