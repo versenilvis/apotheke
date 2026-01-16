@@ -42,7 +42,7 @@ jobs:
           GOARCH: ${{ matrix.goarch }}
           CGO_ENABLED: 1
         run: |
-          go build -ldflags="-s -w" -o apotheke${{ matrix.ext }} ./cmd/apotheke
+          go build -ldflags="-s -w" -o apotheke${{ matrix.ext }} ./cmd
 
       - name: Create archive (Unix)
         if: matrix.goos != 'windows'
