@@ -1,4 +1,4 @@
-module github.com/verse/apotheke
+module github.com/versenilvis/apotheke
 
 go 1.21
 

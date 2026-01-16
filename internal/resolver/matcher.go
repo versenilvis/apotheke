@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/sahilm/fuzzy"
-	"github.com/verse/apotheke/internal/model"
+	"github.com/versenilvis/apotheke/internal/model"
 )
 
 type Match struct {

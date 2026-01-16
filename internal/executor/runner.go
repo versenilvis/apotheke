@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
-	"github.com/verse/apotheke/internal/model"
+	"github.com/versenilvis/apotheke/internal/model"
 )
 
 type Executor struct {

@@ -3,7 +3,7 @@ package executor
 import (
 	"testing"
 
-	"github.com/verse/apotheke/internal/model"
+	"github.com/versenilvis/apotheke/internal/model"
 )
 
 func TestExecutor_BuildCommand(t *testing.T) {

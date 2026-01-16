@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/verse/apotheke/internal/model"
+	"github.com/versenilvis/apotheke/internal/model"
 )
 
 func TestResolver_Resolve_ExactMatch(t *testing.T) {

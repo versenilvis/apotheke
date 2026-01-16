@@ -8,12 +8,12 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
-	"github.com/verse/apotheke/internal/config"
-	"github.com/verse/apotheke/internal/db"
-	"github.com/verse/apotheke/internal/executor"
-	"github.com/verse/apotheke/internal/model"
-	"github.com/verse/apotheke/internal/resolver"
-	"github.com/verse/apotheke/pkg/shell"
+	"github.com/versenilvis/apotheke/internal/config"
+	"github.com/versenilvis/apotheke/internal/db"
+	"github.com/versenilvis/apotheke/internal/executor"
+	"github.com/versenilvis/apotheke/internal/model"
+	"github.com/versenilvis/apotheke/internal/resolver"
+	"github.com/versenilvis/apotheke/pkg/shell"
 )
 
 var version = "0.1.1"

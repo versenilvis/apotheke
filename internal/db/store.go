@@ -5,7 +5,7 @@ import (
 	"time"
 
 	_ "github.com/mattn/go-sqlite3"
-	"github.com/verse/apotheke/internal/model"
+	"github.com/versenilvis/apotheke/internal/model"
 )
 
 type Store struct {
