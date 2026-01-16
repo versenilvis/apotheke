@@ -79,7 +79,16 @@ echo 'apotheke init fish | source' >> ~/.config/fish/config.fish
 ```
 
 ## Commands
-- Please from the [docs](./docs/commands.md)
+> [!IMPORTANT]
+> - Please read from the [docs](./docs/commands.md)
+
+## Tutorial
+> [!IMPORTANT]
+> - Please read from the [docs](./docs/tutorial.md)
+
+## More examples
+> [!IMPORTANT]
+> - Please read from the [docs](./docs/examples.md)
 
 ## Uninstall
 
