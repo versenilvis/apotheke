@@ -1,4 +1,4 @@
-# v0.1.1
+# v0.1.1 - 2026-01-16
 >[!NOTE]
 > ## Added
 > - More examples c1cc51a0c06ceb1727fa964a4ccd435fa51576ff
@@ -17,7 +17,7 @@
 > - MacOS testing
 > - Alias for Windows
 
-# v0.1.0
+# v0.1.0 - 2026-01-15
 >[!NOTE]
 > ## Added
 > - Fuzzy matching
