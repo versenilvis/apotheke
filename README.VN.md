@@ -33,7 +33,7 @@ Tiếng Việt | [English](./README.md)
 **Một dòng lệnh (khuyên dùng):**
 
 ```bash
-curl -sS https://raw.githubusercontent.com/versenilvis/apotheke/main/install.sh | sh
+curl -sS https://raw.githubusercontent.com/versenilvis/apotheke/main/install.sh | sudo sh
 ```
 
 **Hoặc với Go:**

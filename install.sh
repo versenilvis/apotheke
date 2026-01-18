@@ -2,10 +2,10 @@
 set -e
 
 # Apotheke installer
-# Usage: curl -sS https://raw.githubusercontent.com/versenilvis/apotheke/main/install.sh | sh
+# Usage: curl -sS https://raw.githubusercontent.com/versenilvis/apotheke/main/install.sh | sudo sh
 
 REPO="versenilvis/apotheke"
-BIN_DIR="${BIN_DIR:-$HOME/.local/bin}"
+BIN_DIR="${BIN_DIR:-/usr/local/bin}"
 
 main() {
     echo "Installing apotheke..."
@@ -44,19 +44,11 @@ main() {
 
     echo ""
     echo "Installed apotheke to ${BIN_DIR}/apotheke"
-    
-    if ! echo ":${PATH}:" | grep -q ":${BIN_DIR}:"; then
-        echo ""
-        echo "Note: ${BIN_DIR} is not in your PATH."
-        echo "Add this to your shell config:"
-        echo "  export PATH=\"\${PATH}:${BIN_DIR}\""
-    fi
-
     echo ""
-    echo "To enable the 'a' shortcut, add to your shell config:"
-    echo "  eval \"\$(apotheke init bash)\"   # for bash"
-    echo "  eval \"\$(apotheke init zsh)\"    # for zsh"
-    echo "  apotheke init fish | source      # for fish"
+    echo "Add to your shell config:"
+    echo '  eval "$(apotheke init bash)"   # for bash'
+    echo '  eval "$(apotheke init zsh)"    # for zsh'
+    echo '  apotheke init fish | source    # for fish'
 }
 
 get_arch() {

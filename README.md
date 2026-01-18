@@ -39,7 +39,7 @@
 **One-liner (recommended):**
 
 ```bash
-curl -sS https://raw.githubusercontent.com/versenilvis/apotheke/main/install.sh | sh
+curl -sS https://raw.githubusercontent.com/versenilvis/apotheke/main/install.sh | sudo sh
 ```
 
 **Or with Go:**
