@@ -35,6 +35,9 @@ Tiếng Việt | [English](./README.md)
 ```bash
 curl -sS https://raw.githubusercontent.com/versenilvis/apotheke/main/install.sh | sudo sh
 ```
+> [!IMPORTANT]
+> Apotheke dùng quyền root (sudo) chỉ để đặt binary file vào `/usr/bin` thay vì `~/.local/bin`, như vậy bạn không cần phải export `~/.local/bin` path trong shell config nữa  
+> Vui lòng đọc thêm [ở đây](https://github.com/versenilvis/apotheke/commit/24832d3d3cb14c918d120febf638c9714155c708#diff-043df5bdbf6639d7a77e1d44c5226fd7371e5259a1e4df3a0dd5d64c30dca44fL8)
 
 **Hoặc với Go:**
 
