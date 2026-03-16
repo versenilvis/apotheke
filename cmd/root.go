@@ -45,6 +45,7 @@ var (
 )
 
 func init() {
+	rootCmd.CompletionOptions.DisableDefaultCmd = true
 	rootCmd.Flags().BoolVar(&dryRun, "dry-run", false, "Show command without executing")
 	rootCmd.Flags().BoolVarP(&noConfirm, "yes", "y", false, "Skip confirmation prompts")
 
